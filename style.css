@@ -1,0 +1,151 @@
+* {
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 75%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.outer-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: 32rem;
+  width: 70%;
+  border: solid 3px #ddd;
+}
+
+.display {
+  width: 92%;
+  height: 4rem;
+  border: solid 2px #ddd;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: rgb(155, 150, 150);
+  padding-top: 0.5rem;
+  padding-left: 0.7rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.4rem;
+}
+
+.button {
+  font-size: 3.5rem;
+  color: rgb(167, 157, 157);
+  padding: 0.75rem 2rem;
+  border: solid 2px #ddd;
+  border-radius: 20px;
+  text-align: center;
+}
+
+button {
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+
+.button:hover {
+  border-color: rgb(25, 221, 235);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.op {
+  color: rgb(25, 221, 235);
+}
+
+@media (max-width: 825px) {
+  .button {
+    font-size: 1.8rem;
+  }
+  .outer-border {
+    height: 25rem;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .button {
+    font-size: 2rem;
+  }
+  .outer-border {
+    height: 26rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .button {
+    font-size: 1.8rem;
+  }
+  .outer-border {
+    height: 25rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .button {
+    font-size: 1.8rem;
+  }
+  .outer-border {
+    height: 25rem;
+    width: 85%;
+  }
+}
+
+@media (max-width: 650px) {
+  .button {
+    font-size: 1.8rem;
+  }
+  .outer-border {
+    height: 25rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 1.5rem;
+  }
+  .outer-border {
+    height: 24rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    max-width: 95%;
+  }
+
+  .button {
+    font-size: 1.5rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .outer-border {
+    height: 23rem;
+    width: 95%;
+  }
+}
+@media (max-width: 350px) {
+  body {
+    max-width: 95%;
+  }
+
+  .button {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+  }
+  .outer-border {
+    height: 20rem;
+    width: 95%;
+  }
+}
